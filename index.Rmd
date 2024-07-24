@@ -37,6 +37,19 @@ site: distill::distill_website
 | 1:05-1:25    |  [Group Share](https://usda-data-usage-workshop.netlify.app/share)         | 
 | 1:25-1:30    | [Concluding Remarks](https://usda-data-usage-workshop.netlify.app/close)         | 
 
+<br>
+
+<button onclick="document.getElementById('pdfPopup').style.display='block'" class="btn btn-primary">View Workshop Report</button>
+
+<div id="pdfPopup" style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%, -50%); padding:20px; background-color:white; box-shadow:0px 0px 10px 0px rgba(0,0,0,0.2);">
+  <h2>Workshop Report</h2>
+  <p>Click the button below to view the PDF of the workshop report.</p>
+  <a href="workshop_report.pdf" target="_blank" class="btn btn-primary">View PDF</a>
+  <button onclick="document.getElementById('pdfPopup').style.display='none'" class="btn btn-secondary">Close</button>
+</div>
+
+
+<br>
 
 ## Learn More
 
@@ -49,7 +62,6 @@ site: distill::distill_website
 <br>
 
 For more information about how to participate in future workshops, please email Dr. Lauren Chenarides at [Lauren.Chenarides@colostate.edu](Lauren.Chenarides@colostate.edu){target="_blank"}.
-
 
 
 ```{r setup, include=FALSE}
